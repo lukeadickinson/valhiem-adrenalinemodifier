@@ -1,0 +1,9 @@
+{
+  "name": "AdrenalineModifier",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/lukeadickinson/valhiem-adrenalinemodifier",
+  "description": "Modify Adrenaline growth, decay, and decay timer",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202"
+  ]
+}
