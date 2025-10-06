@@ -13,7 +13,7 @@ namespace AdrenalineModifier
     {
         const string pluginGUID = "mightywa33ior.valheim.adrenalinemodifier";
         const string pluginName = "AdrenalineModifier";
-        const string pluginVersion = "1.0.0";
+        const string pluginVersion = "1.0.1";
 
         private readonly Harmony HarmonyInstance = new Harmony(pluginGUID);
 
@@ -34,9 +34,9 @@ namespace AdrenalineModifier
 
             Config.SaveOnConfigSet = false;   // Disable saving when binding each following config
             //// Binds the configuration, the passed variable will always reflect the current value set
-            AdrenalineMultiplier = Config.Bind("General", "AdrenalineMultiplier", 1.0f, "Multiplier to gained adrenaline (examples: harder 0.5, standard 1.0, easier 1.5)");
-            AdrenalineDecayMultiplier = Config.Bind("General", "AdrenalineDecayMultiplier", 1.0f, "Multiplier to lost adrenaline (examples: harder 1.5, standard 1.0, easier 0.5)");
-            AdrenalineDecayDelayMultiplier = Config.Bind("General", "AdrenalineDecayDelayMultiplier", 1.0f, "Multiplier to delay before adrenaline decay starts (examples: 0.5, standard 1.0, easier 1.5)");
+            AdrenalineMultiplier = Config.Bind("General", "AdrenalineMultiplier", 1.0f, "Multiplier to gained adrenaline (example: harder 0.5, standard 1.0, easier 1.5)");
+            AdrenalineDecayMultiplier = Config.Bind("General", "AdrenalineDecayMultiplier", 1.0f, "Multiplier to lost adrenaline (example: harder 1.5, standard 1.0, easier 0.5)");
+            AdrenalineDecayDelayMultiplier = Config.Bind("General", "AdrenalineDecayDelayMultiplier", 1.0f, "Multiplier to delay before adrenaline decay starts (example: harder 0.5, standard 1.0, easier 1.5)");
 
             Config.Save();   // Save only once
             Config.SaveOnConfigSet = true;   // Re-enable saving on config changes
